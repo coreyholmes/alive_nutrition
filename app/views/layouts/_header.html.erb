@@ -1,0 +1,96 @@
+<!-- **************************************************************************** -->
+<!-- *********************** Top Navbar with Social Icons *********************** -->
+<!-- **************************************************************************** -->
+
+
+  <header id="header">      
+        <div class="container hidden-xs">
+            <div class="row">
+                <div class="col-sm-12 overflow">
+                   <div class="social-icons pull-right">
+                        <ul class="nav nav-pills">
+                            <li><p><span class="red-font"><strong>CALL US </strong></span> (+256) 000 000 000</p></li>
+                            <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="http://www.twitter.com"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="http://plus.google.com"  target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="http://linkedin.com"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div> 
+                </div>
+             </div>
+        </div>
+
+
+<!-- ************************************************************************ -->
+<!-- *********************** Logo + Mobile Nav Toggle *********************** -->
+<!-- ************************************************************************ -->
+
+
+        <div id="sticker" class="navbar navbar-inverse" role="banner">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <div class="logo-box">
+                    <a class="navbar-brand" href="index.html">
+                    <%= image_tag('an.svg', alt: 'Brand', id: 'logo') %>
+                    </a>
+                    </div>
+                </div>
+
+        
+<!-- ***************************************************************** -->
+<!-- *********************** The Sticky Navbar *********************** -->
+<!-- ***************************************************************** -->
+
+
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                    <li><%= link_to "Home", root_path %></li>
+                        <li class="dropdown"><a href="#">About <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                            <li><%= link_to "Our Company", about_path %></li>
+                            </ul>
+                        </li>                    
+                        <li class="dropdown"><a href="#">Product <i class="fa fa-angle-down"></i></a>
+                            <ul role="menu" class="sub-menu">
+                                <li><%= link_to "All Product", product_path %></li>
+                                <li><%= link_to "Ultra Immune®", product_path(anchor: "ultraimmune") %></li>
+                            </ul>
+                        </li>
+                        <li><a href="faq.html">FAQ</a></li>
+                        <li><a href="#contact" class="anchor">Contact</a></li>                    
+                    </ul>
+                </div>
+
+        
+<!-- ************************************************************************** -->
+<!-- *********************** Phone Icon + Social Pop-up *********************** -->
+<!-- ************************************************************************** -->
+
+
+                <div class="search hidden-xs">
+                    <form role="form">
+                        <i id="phone" class="fa fa-phone"></i>
+                        <i id="times" class="fa fa-times hide"></i>
+                        <div class="field-toggle">
+                            <div class="social-pop">
+                              <ul class="nav nav-pills">
+                                <li><p><span class="red-font"><strong>CALL </strong></span> (+256) 000 000 000</p></li>
+                                <li><a href="http://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="http://www.twitter.com"  target="_blank"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="http://www.google.com"  target="_blank"><i class="fa fa-google-plus"></i></a></li>
+                                <li><a href="http://plus.google.com/"  target="_blank"><i class="fa fa-linkedin"></i></a></li>
+                              </ul>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header> 
+    <!--/#header-->
